@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main(){
+       int x=3;
+       switch(x){
+              case 1:
+              cout<<("choice is 1");
+              break;
+              case 2:
+              cout<<("choice is 2");
+              break;
+              case 3:
+              cout<<("choice is 3");
+              break;
+              default:
+              cout<<"chice other than above:";
+              break;
+       }
+       return 0;
+}
