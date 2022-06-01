@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+	int countmethod(long long nstairs)
+	{
+		if(nstairs<0)//base case
+		return 0;
+		if(nstairs==0)
+		return 1;
+	
+	int	ans=  countmethod(nstairs-1)+ countmethod(nstairs-2);
+	return ans;
+}
+int main(){
+
+}
+
+	
