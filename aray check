@@ -15,7 +15,7 @@ int main(){
 
 int a[]={0,1,3,7,-5};
 int x=2;
-int size=sizeof(a)/sizeof(a[0]);
+int size=sizeof(a)/sizeof(a[0]);//it will givesize of one element in the array
 if(checkpair(a,size,x)){
 	cout<<"valid pair exists"<<endl;
 }
