@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int arr[6],n=6;
+	cout<<"enetr teh elements of array";
+	int i,k;
+	for(i=0;i<n;i++){
+		cin>>k;
+		arr[i]=k;
+	}
+	for(i=0;i<n;i++){
+		cout<<arr[i]<<" ";
+	}
+	
+	for(i=0;i<n;i++){
+		for(int j=i+1;j<n;j++){
+			if(arr[i]==arr[j]){
+			cout<<"dulpicate element is "<<arr[i];
+			break;
+		}
+			else{
+				//cout<<"not found";
+			}
+		}
+	}
+
+return 0;
+}
