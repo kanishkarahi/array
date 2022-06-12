@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+void bubblesort(int arr[],int n)
+{
+       int i,j;
+       for(i=0;i<n-1;i++)//last i element is already sorted
+       for(j=0;j<n-i-1;j++)//i se bhi kam tAK
+       if(arr[j]>arr[j+1])
+       swap(arr[j],arr[j+1]);
+       
+}
+void printrray(int arr[],int size)
+{
+       int i;
+       for(i=0;i<size;i++)//array printing
+       cout<<arr[i]<<" ";
+       cout<<endl;
+}
+int main(){
+       int arr[]={6,5,7,8,9,1};
+       int n=sizeof(arr)/sizeof(arr[0]);
+       bubblesort(arr,n);
+       cout<<"sorted array ";
+       printrray(arr,n);
+       return 0;
+
+}
